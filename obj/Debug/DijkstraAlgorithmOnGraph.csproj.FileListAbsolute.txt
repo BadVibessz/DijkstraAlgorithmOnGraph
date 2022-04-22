@@ -1,0 +1,11 @@
+C:\Users\danil\source\repos\DijkstraAlgorithmOnGraph\bin\Debug\DijkstraAlgorithmOnGraph.exe.config
+C:\Users\danil\source\repos\DijkstraAlgorithmOnGraph\bin\Debug\DijkstraAlgorithmOnGraph.exe
+C:\Users\danil\source\repos\DijkstraAlgorithmOnGraph\bin\Debug\DijkstraAlgorithmOnGraph.pdb
+C:\Users\danil\source\repos\DijkstraAlgorithmOnGraph\obj\Debug\DijkstraAlgorithmOnGraph.csproj.AssemblyReference.cache
+C:\Users\danil\source\repos\DijkstraAlgorithmOnGraph\obj\Debug\DijkstraAlgorithmOnGraph.Properties.Resources.resources
+C:\Users\danil\source\repos\DijkstraAlgorithmOnGraph\obj\Debug\DijkstraAlgorithmOnGraph.csproj.GenerateResource.cache
+C:\Users\danil\source\repos\DijkstraAlgorithmOnGraph\obj\Debug\DijkstraAlgorithmOnGraph.csproj.CoreCompileInputs.cache
+C:\Users\danil\source\repos\DijkstraAlgorithmOnGraph\obj\Debug\DijkstraAlgorithmOnGraph.exe
+C:\Users\danil\source\repos\DijkstraAlgorithmOnGraph\obj\Debug\DijkstraAlgorithmOnGraph.pdb
+C:\Users\danil\source\repos\DijkstraAlgorithmOnGraph\obj\Debug\DijkstraAlgorithmOnGraph.Form1.resources
+C:\Users\danil\source\repos\DijkstraAlgorithmOnGraph\obj\Debug\DijkstraAlgorithmOnGraph.DijkstraSetter.resources
