@@ -12,7 +12,7 @@ namespace DijkstraAlgorithmOnGraph
 {
     public partial class Form1 : Form
     {
-        private Loader l = new Loader("data.csv");
+        private Loader l = new ("data.csv");
         private Graph _graph;
         private GraphPainter _graphPainter;
 
@@ -32,10 +32,8 @@ namespace DijkstraAlgorithmOnGraph
             _graphPainter.Paint(e.Graphics);
         }
 
-        private void dijkstraBtn_Click(object sender, EventArgs e) //todo: paint
+        private void dijkstraBtn_Click(object sender, EventArgs e)
         {
-            Vertex start = this._graph.Vertices[0];
-            Vertex end = this._graph.Vertices[0];
             var form = new DijkstraSetter(this._graph);
             form.ShowDialog();
             _graphPainter.HighLightPath(this.panel1.CreateGraphics(),form.Path);

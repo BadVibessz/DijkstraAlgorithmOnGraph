@@ -4,23 +4,29 @@ using System.Linq;
 
 namespace DijkstraAlgorithmOnGraph
 {
-    public static class DijkstraAlgorithm //todo:
+    public static class DijkstraAlgorithm
     {
         private static double minDistance(List<DijkstraVertex> vertices)
         {
-            //return vertices.Min(v => v.DistanceTo);
-
             List<DijkstraVertex> temp = new();
-
+            
             foreach (var v in vertices)
                 if (!v.Visited)
                     temp.Add(v);
             
-            for (int i = 0; i < temp.Count - 1; i++)
-            for (int j = 0; j < temp.Count - i - 1; j++)
-                if (temp[j].DistanceTo > temp[j + 1].DistanceTo)
-                    (temp[j], temp[j + 1]) = (temp[j + 1], temp[j]);
-            return temp.First().DistanceTo;
+            return temp.Min(v => v.DistanceTo);
+
+            // List<DijkstraVertex> temp = new();
+            //
+            // foreach (var v in vertices)
+            //     if (!v.Visited)
+            //         temp.Add(v);
+            //
+            // for (int i = 0; i < temp.Count - 1; i++)
+            // for (int j = 0; j < temp.Count - i - 1; j++)
+            //     if (temp[j].DistanceTo > temp[j + 1].DistanceTo)
+            //         (temp[j], temp[j + 1]) = (temp[j + 1], temp[j]);
+            // return temp.First().DistanceTo;
         }
 
         private static bool areAllVisited(List<DijkstraVertex> vertices)
@@ -31,7 +37,7 @@ namespace DijkstraAlgorithmOnGraph
             return true;
         }
 
-        public static Path FindShortestPath(Graph graph, Vertex start, Vertex end) //todo: not min, e.g 7 - 2
+        public static Path FindShortestPath(Graph graph, Vertex start, Vertex end) 
         {
             var path = new Path(graph, start);
             List<DijkstraVertex> vertices = new();
@@ -59,7 +65,7 @@ namespace DijkstraAlgorithmOnGraph
                 }
 
                 // to find min weighted edge related to current vertex
-                for (int i = 0; i < currentEdges.Count - 1; i++) //todo: useless
+                for (int i = 0; i < currentEdges.Count - 1; i++)
                 for (int j = 0; j < currentEdges.Count - i - 1; j++)
                     if (currentEdges[j].Weight > currentEdges[j + 1].Weight)
                         (currentEdges[j], currentEdges[j + 1]) = (currentEdges[j + 1], currentEdges[j]);
@@ -113,7 +119,7 @@ namespace DijkstraAlgorithmOnGraph
             foreach (var v in _path)
                 path.AddVertex(v);
 
-            return path; //todo: reverse
+            return path;
         }
     }
 }
